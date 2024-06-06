@@ -1,5 +1,4 @@
 
-import telegram
 from telegram.ext import Updater, Filters, CommandHandler, MessageHandler
 import cv2
 import numpy as np
