@@ -25,7 +25,7 @@ def image(updater, context):
     photo.download("img.jpg")
     model.predict(source= "img.jpg" ,save_txt=True ,save=True,exist_ok=True)
 # sending prediction to user
-bot = telegram.Bot(token='6775806362:AAF6kkrbwpJPb0Xz3ypmSWytuLSgfA10qsA')
+bot = Updater(token='6775806362:AAF6kkrbwpJPb0Xz3ypmSWytuLSgfA10qsA')
 def send_image(updater, context):
     photo = updater.message.photo[-1].get_file()
     photo.download("img.jpg")
